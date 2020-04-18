@@ -21,7 +21,7 @@ Route::group(['middleware' => 'webAuth'], function () {
     // 路由前缀+命名空间 http://demo.local/shop
     Route::prefix('shop')->namespace('Shop')->group(function () {
         // 在 「App\Http\Controllers\Web\Shop 命名空间下的控制器
-        Route::get('/', 'MainController@index');
+        Route::post('/', 'MainController@index');
     });
     
 });
